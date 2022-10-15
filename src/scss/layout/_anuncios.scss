@@ -26,4 +26,26 @@
     display: flex;
     list-style: none;
     padding: 0;
+
+    li{
+        flex: 1;
+        display: flex;
+        img{
+            flex: 0 0 3rem;
+            margin-right: 1rem;
+        }
+        p{
+            font-weight: $black;
+        }
+    }
 }
+
+.ver-todas{
+    display: flex;
+    justify-content: flex-end;
+    
+    .boton-verde{
+        display: inline-block;
+    }
+}
+
