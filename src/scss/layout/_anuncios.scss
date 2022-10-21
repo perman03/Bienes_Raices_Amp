@@ -7,6 +7,7 @@
 .anuncio{
     background-color: lighten($gris, 5);
     border: 1px solid darken($gris, 10);
+    margin-bottom: 3rem;
 
     .contenido-anuncio{
         padding: 2rem;
@@ -26,10 +27,13 @@
     display: flex;
     list-style: none;
     padding: 0;
+    gap: 2rem;
 
     li{
         flex: 1;
         display: flex;
+        justify-content: center;
+        
         img{
             flex: 0 0 3rem;
             margin-right: 1rem;
@@ -38,6 +42,8 @@
             font-weight: $black;
         }
     }
+
+    
 }
 
 .ver-todas{
