@@ -1,41 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="build/css/app.css">
-    <title>Bienes Raíces</title>
-</head>
-<body>
+<?php 
+    
+    require 'includes/funciones.php';    // mandamos a llamar el archivo que contiene la funcion 
+      
+    incluirTemplate('header');          // mandamos a llamar la funcion y le pasamos como argumento el nombre del template
+        
+    
 
-<!-- HEADER -->
-    <header class="header">
-
-        <div class="contenedor contenido-header">
-
-            <div class="barra">
-                <a href="/"><img src="build/img/logo.svg" alt="Logotipo de bienes raices"></a>
-
-                <div class="mobile-menu">
-                    <img src="build/img/barras.svg" alt="icono menú responsive">
-                </div>
-
-                <div class="derecha">
-                    <img src="build/img/dark-mode.svg" alt="boton para darkmode" class="dark-mode">
-                    <nav class="navegacion">
-                        <a href="nosotros.html">Nosotros</a>
-                        <a href="anuncios.html">Anuncios</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="contacto.html">Contacto</a>
-                    </nav>
-                </div>
-
-            </div>  <!--Cierre de barra-->
-            
-        </div>
-
-    </header>
+?>
 
 <!-- FIN DE HEADER-->
 
@@ -95,22 +66,12 @@
 
 <!-- INICIO DE FOOTER -->
 
-    <footer class="footer seccion">
+    <?php 
 
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">blog</a>
-                <a href="contacto.html">contacto</a>
-            </nav>
-        </div>
-        <p class="copyright">Todos los derechos reservados 2022</p>
-        
-    </footer>
+        incluirTemplate('footer'); 
+
+
+    ?> 
+
 
 <!-- FIN DE FOOTER  -->
-
-    <script src="build/js/bundle.min.js"></script>
-</body>
-</html>

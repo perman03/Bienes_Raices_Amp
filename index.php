@@ -1,47 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="build/css/app.css">
-    <title>Bienes Raíces DEV</title>
-</head>
-<body>
+<?php 
+    
+    require 'includes/funciones.php';    // mandamos a llamar el archivo que contiene la funcion 
+      
+    incluirTemplate('header', $inicio = true);          // mandamos a llamar la funcion y le pasamos como argumento el nombre del template
+        
+    
 
-<!-- HEADER -->
-    <header class="header inicio">
-
-
-        <div class="contenedor contenido-header">
-
-           
-
-            <div class="barra">
-                <a href="/"><img src="build/img/logo.svg" alt="Logotipo de bienes raices"></a>
-
-                <div class="mobile-menu">
-                    <img src="build/img/barras.svg" alt="icono menú responsive">
-                </div>
-
-                <div class="derecha">
-                    <img src="build/img/dark-mode.svg" alt="boton para darkmode" class="dark-mode">
-                    <nav class="navegacion">
-                        <a href="nosotros.html">Nosotros</a>
-                        <a href="anuncios.html">Anuncios</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="contacto.html">Contacto</a>
-                    </nav>
-                </div>
-
-
-
-            </div>  <!--Cierre de barra-->
-            <h1>Venta de casas y departamentos exclusivos de lujo</h1>
-            
-        </div>
-
-    </header>
+?>
 
 <!-- FIN DE HEADER-->
 
@@ -106,7 +71,7 @@
                         </li>
                     </ul>
 
-                    <a class="boton boton-amarillo" href="anuncios.html">Ver Propiedad</a>
+                    <a class="boton boton-amarillo" href="anuncios.php">Ver Propiedad</a>
                 </div>
             </div>
 
@@ -137,7 +102,7 @@
                         </li>
                     </ul>
 
-                    <a class="boton boton-amarillo" href="anuncios.html">Ver Propiedad</a>
+                    <a class="boton boton-amarillo" href="anuncios.php">Ver Propiedad</a>
                 </div>
             </div>
 
@@ -168,14 +133,14 @@
                         </li>
                     </ul>
 
-                    <a class="boton boton-amarillo" href="anuncios.html">Ver Propiedad</a>
+                    <a class="boton boton-amarillo" href="anuncios.php">Ver Propiedad</a>
                 </div>
             </div>
             
         </div>
 
         <div class="ver-todas">
-            <a href="anuncios.html" class="boton boton-verde">Ver todas</a>
+            <a href="anuncios.php" class="boton boton-verde">Ver todas</a>
         </div>
 
     </section>
@@ -185,7 +150,7 @@
     <section class="imagen-contacto">
         <h2>Encuentra la casa de tus sueños</h2>
         <p>Llena el formulario de contacto y un asesor se pondrá en contacto contigo a la brevedad</p>
-        <a href="contacto.html" class="boton-amarillo">Contáctanos</a>
+        <a href="contacto.php" class="boton-amarillo">Contáctanos</a>
     </section>
 
     <!-- TESTIMONIALES Y BLOG -->
@@ -204,7 +169,7 @@
                 </div>
 
                 <div class="texto-entrada">
-                    <a href="entrada.html">
+                    <a href="blog.php">
                         <h4>Terraza en el techo de tu casa</h4>
                         <p>Escrito el: <span>10/10/2022</span> por: <span>Admin</span></p>
 
@@ -226,7 +191,7 @@
                 </div>
 
                 <div class="texto-entrada">
-                    <a href="entrada.html">
+                    <a href="blog.php">
                         <h4>Guía para la decoración de tu hogar</h4>
                         <p>Escrito el: <span>10/10/2022</span> por: <span>Admin</span></p>
 
@@ -255,8 +220,13 @@
 
 
 
+<!-- Inicio footer desde php -->
+    <?php 
+
+        incluirTemplate('footer'); 
 
 
+    ?>
 
 
 
@@ -264,24 +234,5 @@
 
 
     
-<!-- INICIO DE FOOTER -->
 
-    <footer class="footer seccion">
 
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-        </div>
-        <p class="copyright">Todos los derechos reservados 2022</p>
-
-    </footer>
-
-<!-- FIN DE FOOTER  -->
-
-    <script src="build/js/bundle.min.js"></script>
-</body>
-</html>
