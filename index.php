@@ -1,8 +1,11 @@
 <?php 
     
-    require 'includes/funciones.php';    // mandamos a llamar el archivo que contiene la funcion 
-      
-    incluirTemplate('header', $inicio = true);          // mandamos a llamar la funcion y le pasamos como argumento el nombre del template
+    // mandamos a llamar el archivo que contiene la funcion 
+    require 'includes/funciones.php';    
+
+    // mandamos a llamar la funcion y le pasamos como argumento el nombre del template
+    incluirTemplate('header', $inicio = true);
+    
         
     
 

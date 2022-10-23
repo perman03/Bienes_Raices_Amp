@@ -24,6 +24,6 @@
 
 <!-- FIN DE FOOTER  -->
 
-<script src="build/js/bundle.min.js"></script>
+<script src="/bienesraices_amp/build/js/bundle.min.js"></script>
 </body>
 </html>

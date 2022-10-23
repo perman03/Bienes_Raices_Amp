@@ -22,15 +22,16 @@
     grid-template-columns: repeat($columnas, 1fr);
 }
 
-@mixin boton($bgColor){
+@mixin boton($bgColor, $display){
     background-color: $bgColor;
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    padding: 1rem 3rem;
     color: $blanco;
-    font-weight: bold;
+    font-weight: $bold;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    text-align: center;
     margin-top: 2.5rem;
+    display: $display;
+    border: none;
 
     &:hover{
         background-color: darken($bgColor, 5);
