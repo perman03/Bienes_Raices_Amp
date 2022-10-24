@@ -65,5 +65,5 @@ function modoOscuro(){
 }
 
 function funcionAlerta(){
-    alert('Formulario enviado correctamente');
+    alert('Tu información ha sido registrada con exito');
 }
