@@ -98,7 +98,7 @@
 
     <main class="contenedor seccion">
         <h1>CREAR</h1>
-        <a href="/bienesraices_amp/admin/index.php" class="boton boton-verde">Volver</a>
+        <a href="/bienesraices_amp/admin/index.php" class="boton boton-verde">Volver a menú principal</a>
 
         <!-- Desplegar el arreglo de los errores en la interfaz -->
         <?php foreach($errores as $error):?>
@@ -149,7 +149,7 @@
                 </select>
             </fieldset>
 
-            <input type="submit" value="Crear propiedad" class="boton boton-verde">
+            <input type="submit" value="Crear propiedad" class="boton boton-amarillo">
         </form>
     </main>
 
