@@ -63,3 +63,7 @@ function modoOscuro(){
         cuerpo.classList.add('dark');
     }
 }
+
+function funcionAlerta(){
+    alert('Formulario enviado correctamente');
+}
