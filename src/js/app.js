@@ -63,7 +63,3 @@ function modoOscuro(){
         cuerpo.classList.add('dark');
     }
 }
-
-function funcionAlerta(){
-    alert('Tu información ha sido registrada con exito');
-}
