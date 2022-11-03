@@ -1,7 +1,7 @@
 .dark{
     background-color: darken($grisOscuro, 10);
     
-    p,a{
+    p,a, td{
         color: $blanco;
     }
     h1,h2,h3,h4,blockquote{
